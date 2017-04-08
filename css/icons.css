@@ -1,0 +1,19 @@
+﻿.folder, .circle, .glass, .kolo, .cloud, 
+.pixel, .world, .ok, .lamp, .mail, 
+.plane, .phone-green, .location, .phone
+{ display: inline-block; background: url('../img/sprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.folder { background-position: -2px -0px; width: 56px; height: 48px; }
+.circle { background-position: -2px -50px; width: 52px; height: 52px; }
+.glass { background-position: -2px -104px; width: 48px; height: 56px; }
+.kolo { background-position: -2px -162px; width: 44px; height: 44px; }
+.cloud { background-position: -2px -208px; width: 38px; height: 36px; }
+.pixel { background-position: -2px -246px; width: 32px; height: 32px; }
+.world { background-position: -2px -280px; width: 30px; height: 30px; }
+.ok { background-position: -2px -312px; width: 26px; height: 26px; }
+.lamp { background-position: -30px -312px; width: 24px; height: 38px; }
+.mail { background-position: -36px -246px; width: 18px; height: 12px; }
+.plane { background-position: -36px -260px; width: 18px; height: 18px; }
+.phone-green { background-position: -34px -280px; width: 16px; height: 16px; }
+.location { background-position: -42px -208px; width: 14px; height: 20px; }
+.phone { background-position: -42px -230px; width: 14px; height: 14px; }
