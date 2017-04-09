@@ -495,6 +495,16 @@ textarea.form-control {
   flex-direction: column;
   padding-top: 97px;
 }
+.section-header {
+  display: inherit;
+  -webkit-flex-direction: inherit;
+  -ms-flex-direction: inherit;
+  flex-direction: inherit;
+  min-width: 80%;
+}
+.section-header > p {
+  text-align: center;
+}
 .section-body {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -688,6 +698,9 @@ textarea.form-control {
 .background-dark {
   background-color: #296365;
 }
+.background-light {
+  background-color: #eef1ec;
+}
 .container {
   width: 100%;
 }
@@ -710,21 +723,38 @@ ul {
   font-size: 32px;
   margin: 0 auto 20px;
   color: #0f5f5c;
+  text-align: center;
 }
 .deco-line {
   position: relative;
 }
-.deco-line:after {
-  content: '';
-  display: block;
-  width: 65px;
-  border: solid 1px #6fb048;
-  position: absolute;
-  top: 60px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
+@media all and (min-width: 600px) {
+  .deco-line:after {
+    content: '';
+    display: block;
+    width: 65px;
+    border: solid 1px #6fb048;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+  }
+}
+.ok {
+  min-width: 26px;
+}
+.left,
+.right {
+  width: 50%;
+}
+@media all and (max-width: 750px) {
+  .left,
+  .right {
+    width: 100%;
+    text-align: center;
+  }
 }
 .collapse {
   display: block;
@@ -764,6 +794,11 @@ ul {
 .features {
   padding-bottom: 130px;
 }
+@media all and (max-width: 750px) {
+  .features {
+    padding-bottom: 50px;
+  }
+}
 .features > .container {
   display: inherit;
   -webkit-flex-direction: inherit;
@@ -774,17 +809,7 @@ ul {
   align-items: center;
 }
 .features .section-header {
-  display: inherit;
-  -webkit-flex-direction: inherit;
-  -ms-flex-direction: inherit;
-  flex-direction: inherit;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
   max-width: 450px;
-}
-.features .section-header > p {
-  text-align: center;
 }
 .features-box {
   display: -webkit-flex;
@@ -899,5 +924,104 @@ ul {
   .features .deco:after,
   .features .deco:before {
     display: none;
+  }
+}
+.template {
+  padding-bottom: 0;
+  padding-top: 75px;
+}
+.template > .container {
+  display: inherit;
+  -webkit-flex-direction: inherit;
+  -ms-flex-direction: inherit;
+  flex-direction: inherit;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.template .section-body {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media all and (max-width: 750px) {
+  .template .section-body .left {
+    display: none;
+  }
+}
+.template .section-body .left > img {
+  display: block;
+  width: 80%;
+}
+.template .section-body .right {
+  padding: 20px 0;
+}
+.template .section-body .right > .h2 {
+  margin-bottom: 0;
+  text-align: left;
+}
+.template .section-body .right > p {
+  line-height: 1.8;
+  text-align: left;
+}
+.template .section-body .right li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.template .section-body .right li > span {
+  padding-left: 15px;
+}
+.testimonals > .container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.testimonals .left {
+  padding-right: 30px;
+}
+.testimonals .left p {
+  font-family: 'Merriweather', serif;
+  font-size: 22px;
+  line-height: 2;
+}
+.testimonals .left span {
+  display: block;
+  font-weight: 500;
+}
+.testimonals .left span:first-child {
+  color: #6fb048;
+}
+.testimonals .right {
+  padding: 80px;
+}
+@media all and (max-width: 1000px) {
+  .testimonals .right {
+    padding: 40px;
+  }
+}
+@media all and (max-width: 750px) {
+  .testimonals .right {
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
   }
 }
