@@ -817,6 +817,7 @@ ul {
 @media all and (max-width: 750px) {
   .features-other > .features-item {
     width: 100%;
+    padding: 0 10px;
   }
 }
 .features-other > .features-item .features-item-heading {
@@ -839,7 +840,7 @@ ul {
 @media all and (max-width: 750px) {
   .features-item {
     width: 100%;
-    padding: 0 20px 30px;
+    padding: 0 10px 30px;
   }
 }
 .features-item-title {
