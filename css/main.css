@@ -1314,6 +1314,10 @@ ul {
   text-decoration: none;
   color: inherit;
 }
+.footer .footer-column a:hover {
+  color: #6fb048;
+  text-decoration: underline;
+}
 .footer .footer-column span {
   display: inline-block;
   vertical-align: top;
