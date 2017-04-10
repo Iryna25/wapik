@@ -1354,6 +1354,22 @@ ul {
   padding-bottom: 15px;
   font-size: 12px;
 }
+.footer .form {
+  position: relative;
+}
+.footer .form-control {
+  font-size: 13px;
+  padding-right: 40px;
+  border: none;
+  border-radius: 2px;
+  background-color: #eef1ec;
+  color: #83a7a5;
+}
+.footer .plane {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
 .primary {
   color: #6fb048;
 }
