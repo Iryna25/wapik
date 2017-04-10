@@ -1204,7 +1204,7 @@ ul {
   position: relative;
   min-height: 200px;
 }
-.download:after {
+.download:before {
   content: '';
   position: absolute;
   width: 100%;
