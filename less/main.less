@@ -7,10 +7,11 @@
 	@container-width: 1080px;
 	@global-font-family: 'Roboto', sans-serif;
 	@global-font-size: 14px;
+	@primary-color: #6fb048;
 	@global-primary-background: #6fb048;
 	@global-color: #83a7a5;
 	@global-color-dark: #0f5f5c;
-	@button-background: #6fb048;
+	@button-background: @primary-color;
 	@button-border: none;
 	@button-color: #fff;
 
@@ -51,7 +52,7 @@ ul{
 		content: '';
 		display: block;
 		width: 65px;
-		border: solid 1px #6fb048;
+		border: solid 1px @primary-color;
 		position: absolute;
 		top: 60px;
 		left: 50%;
@@ -72,6 +73,8 @@ ul{
 	}
 }
 
+
+
 //button
 	.hook-button() {
 		font-family: 'Montserrat', sans-serif;
@@ -79,11 +82,22 @@ ul{
 		border-radius: 2px;
 		margin-top: 5px;
 		padding: 18px 42px;
+		&:hover{
+			background: #83a7a5;
+		
 	};
 	.hook-button-hover() {};
 	.hook-button-focus() {};
 	.hook-button-active() {};
 	.hook-button-misc() {};
+
+	}
+	.btn-bg-inv{
+		background: #83a7a5;
+			&:hover{
+				background: @primary-color;
+			}
+	}
 
 //background
 	.hook-background() {
@@ -252,6 +266,58 @@ ul{
 				width: 48%;}
 			}
 	}
+
+//card
+	.hook-card() {
+		@media all and (max-width: 790px){
+			width: 80%;
+			margin: auto;
+			padding: 30px 25px;
+		}
+		width: 33.33%;
+		flex-direction: column;
+		padding: 30px 55px;
+		border: solid 1px #c1d3d2;
+		&-box{
+			@media all and (max-width: 790px){
+			flex-wrap: wrap;}
+			margin-top: 25px;
+			max-width: 770px;
+			display: flex;
+
+		}
+		.price{
+			font-family: 'Montserrat', sans-serif;
+			font-size: 65px;
+			font-weight: 600;
+			line-height: 1;
+		}
+		.button{
+			font-size: 13px;
+			padding: 12px 20px;
+		}
+	};
+	.hook-card-header() {};
+	.hook-card-body() {};
+	.hook-card-footer() {};
+	.hook-card-heading() {
+		margin-bottom: 20px;
+		font-weight: 500;
+		font-size: 15px;
+		text-transform: uppercase;
+	};
+	.hook-card-description() {
+		@media all and (max-width: 790px){
+			height: 70px;
+		}
+		margin-top: 27px;
+		margin-bottom: 27px;
+		height: 100px;
+		overflow: hidden;
+		line-height: 1.8;
+	};
+	.hook-card-image() {};
+	.hook-card-misc() {};
 
 //features
 	.features{
@@ -427,9 +493,6 @@ ul{
 			span{
 				display: block;
 				font-weight: 500;
-				&:first-child{
-					color: #6fb048;
-				}
 			}
 		}
 
@@ -469,6 +532,133 @@ ul{
 				line-height: 1.8;
 			}
 		}
-	}			
+	}
+
+
 		
 		
+
+//pricing
+	.pricing{
+		padding-bottom: 100px;
+		>.container{
+			display: inherit;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			>div{
+				display: inherit;
+				flex-direction: inherit;
+				align-items: inherit;
+			}
+		}
+		.discription{
+			max-width: 550px;
+		}
+		.plans{
+			margin-top: 75px;
+			margin-bottom: 60px;
+			
+			.h2{
+				font-size: 22px;
+			}
+			ul{
+				margin-top: 35px;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				@media all and (max-width: 600px){
+					width: 80%;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				>li{
+					@media all and (max-width:900px){
+						width: 50%;
+					}
+					@media all and (max-width: 600px){
+						width: 100%;
+					}
+					width: 33.33%;
+					display: flex;
+					align-items: center;
+					padding-bottom: 14px;
+					>span{
+						padding-left: 8px;
+						text-align: left;
+					}
+				}
+			}
+		}
+		.kolo{
+			margin-bottom: 12px;
+		}
+		.mail-support{
+			font-size: 18px;
+			margin-top: 20px;
+		}
+	}
+
+//download
+	.download{
+		position: relative;
+		min-height: 200px;
+		&:after{
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: #eef1ec;
+			opacity: 0.9;
+			z-index: -10;
+		}
+		.section-overlay{
+			background: url(../img/bg-call.png) no-repeat;
+			background-size: cover;
+		}	
+				
+		>.container{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+
+		}
+		.left{
+			width: 60%;
+			@media all and (max-width: 900px){
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				text-align: center;
+				margin-top: 50px;
+			}
+		}
+		.right{
+			width: 40%;
+			@media all and (max-width: 900px){
+				width: 100%;
+				text-align: center;
+				margin-top: 30px;
+				margin-bottom: 50px;
+			}
+		}
+		.h2{
+			font-size: 28px;
+			text-align: left;
+			margin-bottom: 0px;
+		}
+		.discription{
+			margin-top: 5px;
+		}
+		
+	}
+
+//footer
+	.footer{
+
+	}
+
+.primary{
+	color: @primary-color;
+}
