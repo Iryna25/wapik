@@ -1,7 +1,5 @@
 ﻿@import '../bower_components/tajem/less/main.less';
 
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300|Montserrat|Roboto:300,400,500');
-
 //variables
 	@navbar-breakpoint: 805px;
 	@container-width: 1080px;
@@ -19,7 +17,7 @@
 	width: 100%;
 }
 
-ul{
+.unstyle{
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -33,7 +31,7 @@ ul{
 	color: @global-color-dark;
 }
 
-.discription{
+.description{
 	font-size: 15px;
 }
 
@@ -61,8 +59,12 @@ ul{
 	}
 }
 
-.ok{
-	min-width: 26px;
+.icon-phone{
+	font-size: 18px;
+}
+
+.icon-ok{
+	font-size: 18px;
 }
 
 .left, .right{
@@ -74,13 +76,11 @@ ul{
 }
 
 
-
 //button
 	.hook-button() {
 		font-family: 'Montserrat', sans-serif;
 		text-transform: uppercase;
 		border-radius: 2px;
-		margin-top: 5px;
 		padding: 18px 42px;
 		&:hover{
 			background: #83a7a5;
@@ -238,7 +238,6 @@ ul{
 	.hook-section-heading() {};
 	.hook-section-description() {};
 	.hook-section-overlay() {
-		background: url(../img/bg-grad.png) no-repeat top left, url(../img/bg-header.png);
 		&:after{
 			content: '';
 			position: absolute;
@@ -360,6 +359,9 @@ ul{
 					justify-content: left;
 					height: 50px;
 					padding-left: 8px;
+					.icon{
+						font-size: 40px;
+					}
 				}
 				.features-item-title{
 					padding-left: 20px;
@@ -388,6 +390,9 @@ ul{
 			align-items: center;
 			height: 100px;
 			justify-content: space-between;
+			.icon{
+				font-size: 60px;
+			}
 		}
 		@media all and (max-width: 750px){
 			.deco:after{
@@ -466,7 +471,9 @@ ul{
 					margin-bottom: 15px;
 					>span{
 						padding-left: 15px;
-
+						&:first-child{
+							padding-left: 0;
+						}
 					}
 				}
 			}
@@ -582,11 +589,16 @@ ul{
 					>span{
 						padding-left: 8px;
 						text-align: left;
+						&:first-child{
+							padding-left: 0;
+						}
 					}
 				}
 			}
 		}
-		.kolo{
+		.icon-kolo{
+			font-size: 50px;
+			color: @primary-color;
 			margin-bottom: 12px;
 		}
 		.mail-support{
@@ -608,11 +620,7 @@ ul{
 			opacity: 0.9;
 			z-index: -10;
 		}
-		.section-overlay{
-			background: url(../img/bg-call.png) no-repeat;
-			background-size: cover;
-		}	
-				
+						
 		>.container{
 			display: flex;
 			flex-wrap: wrap;
@@ -718,6 +726,10 @@ ul{
 			padding-top: 15px;
 			padding-bottom: 15px;
 			font-size: 12px;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
 		}
 		.form{
 			position: relative;
@@ -730,15 +742,60 @@ ul{
 			background-color: #eef1ec;
 			color: @global-color;
 		}
-		.plane{
+		.icon-plane{
 			position: absolute;
+			font-size: 17px;
 			right: 10px;
 			top: 10px;
 		}
-	}
 
-	
+		.social{
+			@media all and (max-width: 380px){
+				order: -1;
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+				margin-bottom: 30px;
+			}
+			>li{
+				display: inline-block;
+				height: 30px;
+				width: 30px;
+				margin-left: 10px;
+				text-align: center;
+				line-height: 30px;
+				padding-top: 2px;
+				border-radius: 100px;
+			}
+			a{
+				text-decoration: none;
+				font-size: 19px;
+			}
+
+			.icon:hover{
+				color: #0f5f5c;
+			}
+			
+			.twitter{
+				background-color: #55acee;
+			}
+			.facebook{
+				background-color: #3b5998;
+			}
+			.camera{
+				background-color: #3f729b;
+			}
+			.dribbble{
+				background-color: #ea4c89;
+			}
+			.github{
+				background-color: #333333;
+			}
+
+		}
+	}
 
 .primary{
 	color: @primary-color;
 }
+

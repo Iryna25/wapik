@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'wapic-icons';
+  src:  url('../fonts/wapic-icons.eot?9nmncb');
+  src:  url('../fonts/wapic-icons.eot?9nmncb#iefix') format('embedded-opentype'),
+    url('../fonts/wapic-icons.ttf?9nmncb') format('truetype'),
+    url('../fonts/wapic-icons.woff?9nmncb') format('woff'),
+    url('../fonts/wapic-icons.svg?9nmncb#wapic-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'wapic-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lamp:before {
+  content: "\e900";
+}
+.icon-ok:before {
+  content: "\e901";
+}
+.icon-kolo:before {
+  content: "\e902";
+}
+.icon-folder:before {
+  content: "\e903";
+}
+.icon-pixel:before {
+  content: "\e904";
+}
+.icon-circle:before {
+  content: "\e905";
+}
+.icon-cloud:before {
+  content: "\e906";
+}
+.icon-glass:before {
+  content: "\e907";
+}
+.icon-world:before {
+  content: "\e908";
+}
+.icon-location:before {
+  content: "\f041";
+}
+.icon-camera:before {
+  content: "\f083";
+}
+.icon-phone:before {
+  content: "\f095";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.icon-github:before {
+  content: "\f113";
+}
+.icon-dribbble:before {
+  content: "\f17d";
+}
+.icon-plane:before {
+  content: "\f1d9";
+}
+
