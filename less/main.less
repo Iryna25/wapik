@@ -23,9 +23,7 @@
 	margin: 0;
 }
 
-.inverse{
-	color: #fff;
-}
+
 
 .dark{
 	color: @global-color-dark;
@@ -97,6 +95,10 @@
 			&:hover{
 				background: @primary-color;
 			}
+	}
+
+	.btn-darker{
+		background-color: #49732f;
 	}
 
 //background
@@ -264,6 +266,34 @@
 			@media all and (min-width: @navbar-breakpoint){
 				width: 48%;}
 			}
+	}
+
+	.header-md{
+		min-height: 600px;
+		.section-body>.container{
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+			.button{
+				padding: 18px 28px;
+			}
+		}
+		.section-overlay{
+			&:after{
+				opacity: 0.75;
+			}
+		}
+		.h1{
+			@media all and (max-width: 550px){
+				font-size: 35px;
+			}
+			font-size: 50px;
+			font-weight: 300;
+			margin-bottom: 30px;
+			max-width: 80%;
+		}
 	}
 
 //card
@@ -607,6 +637,22 @@
 		}
 	}
 
+//about-us
+	.about-us{
+		padding-top: 80px;
+		padding-bottom: 100px;
+		.description{
+			max-width: 705px;
+			line-height: 1.8;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+		.features-box{
+			margin-bottom: 20px;
+		}
+	}
+
 //download
 	.download{
 		position: relative;
@@ -656,6 +702,17 @@
 			margin-top: 5px;
 		}
 		
+	}
+	.bg-green{
+		&:before{
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: @global-primary-background;
+			opacity: 0.9;
+			z-index: -10;
+		}
 	}
 
 //footer
@@ -799,3 +856,6 @@
 	color: @primary-color;
 }
 
+.inverse{
+	color: #fff;
+}
