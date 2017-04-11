@@ -1262,6 +1262,18 @@ textarea.form-control {
 .about-us .features-box {
   margin-bottom: 20px;
 }
+.team > .container {
+  display: inherit;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.team > .container .description {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 85px;
+}
 .download {
   position: relative;
   min-height: 200px;
