@@ -75,6 +75,9 @@
 	}
 }
 
+.empty{
+	height: 400px;
+}
 
 //button
 	.hook-button() {
@@ -265,8 +268,12 @@
 
 //main-section
 	.main-section{
-		min-height: 660px;
-		padding-top: 0;
+		min-height: 43vw;
+		padding-top: 0px;
+		.section-body{
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
 		
 		.h1{
 			font-size: 38px;
@@ -279,7 +286,7 @@
 	}
 
 	.main-section-md{
-		min-height: 600px;
+		min-height: 39vw;
 		.section-body>.container{
 			display: flex;
 			flex-direction: column;
@@ -726,6 +733,37 @@
 		padding-top: 0;
 		.plans>.h2{
 			font-size: 32px;
+		}
+	}
+
+//get-in-touch
+	.get-in-touch{
+		padding-bottom: 80px;
+		@media all and (max-width: 600px){
+			padding-bottom: 30px;
+		}
+		>.container{
+			display: inherit;
+			flex-direction: column;
+		}
+		.description{
+			max-width: 416px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.form-group{
+			max-width: 510px;
+		}
+		.form-wrapper{
+			padding: 65px 65px 21px;
+		}
+
+		.form-control{
+			margin-bottom: 25px;
+			border-radius: 2px;
+		}
+		textarea{
+			min-height: 120px;
 		}
 	}
 

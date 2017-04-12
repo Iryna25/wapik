@@ -825,6 +825,9 @@ textarea.form-control {
     text-align: center;
   }
 }
+.empty {
+  height: 400px;
+}
 .btn-bg-inv {
   background: #83a7a5;
 }
@@ -855,8 +858,12 @@ textarea.form-control {
   margin-left: 0;
 }
 .main-section {
-  min-height: 660px;
-  padding-top: 0;
+  min-height: 43vw;
+  padding-top: 0px;
+}
+.main-section .section-body {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .main-section .h1 {
   font-size: 38px;
@@ -870,7 +877,7 @@ textarea.form-control {
   }
 }
 .main-section-md {
-  min-height: 600px;
+  min-height: 39vw;
 }
 .main-section-md .section-body > .container {
   display: -webkit-flex;
@@ -1349,6 +1356,38 @@ textarea.form-control {
 }
 .include .plans > .h2 {
   font-size: 32px;
+}
+.get-in-touch {
+  padding-bottom: 80px;
+}
+@media all and (max-width: 600px) {
+  .get-in-touch {
+    padding-bottom: 30px;
+  }
+}
+.get-in-touch > .container {
+  display: inherit;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.get-in-touch .description {
+  max-width: 416px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.get-in-touch .form-group {
+  max-width: 510px;
+}
+.get-in-touch .form-wrapper {
+  padding: 65px 65px 21px;
+}
+.get-in-touch .form-control {
+  margin-bottom: 25px;
+  border-radius: 2px;
+}
+.get-in-touch textarea {
+  min-height: 120px;
 }
 .download {
   position: relative;
