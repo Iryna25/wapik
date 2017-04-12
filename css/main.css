@@ -947,11 +947,17 @@ textarea.form-control {
 @media all and (max-width: 750px) {
   .features-box {
     margin-bottom: 0;
+    margin-top: 30px;
   }
 }
 .features-other {
   margin-top: 45px;
   margin-bottom: 0px;
+}
+@media all and (max-width: 750px) {
+  .features-other {
+    margin-top: 20px;
+  }
 }
 .features-other > .features-item {
   width: 50%;
@@ -1149,6 +1155,8 @@ textarea.form-control {
     -webkit-order: -1;
     -ms-flex-order: -1;
     order: -1;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
 .attention > .container {

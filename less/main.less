@@ -384,7 +384,9 @@
 			display: flex;
 			margin-top: 60px;
 			@media all and (max-width: 750px){
-			margin-bottom: 0;}
+				margin-bottom: 0;
+				margin-top: 30px;
+			}
 			margin-bottom: 120px;
 			justify-content: space-between;
 			flex-wrap: wrap;
@@ -392,6 +394,9 @@
 
 		&-other{
 			margin-top: 45px;
+			@media all and (max-width: 750px){
+				margin-top: 20px;
+			}
 			margin-bottom: 0px;
 			>.features-item{
 				width: 50%;
@@ -558,6 +563,8 @@
 			}
 			@media all and (max-width: 750px){
 				order: -1;
+				padding-bottom: 0;
+				padding-top: 0;
 			}
 		}
 	}	
