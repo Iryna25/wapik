@@ -752,10 +752,22 @@
 			margin-right: auto;
 		}
 		.form-group{
-			max-width: 510px;
+			width: 56%;
+			@media all and (max-width: 750px){
+				width: 100%;
+				text-align: center;
+			}
 		}
 		.form-wrapper{
 			padding: 65px 65px 21px;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			@media all and (max-width: 750px){
+				flex-direction: column;
+				padding: 20px;
+				align-items: center;
+			}
 		}
 
 		.form-control{
@@ -764,6 +776,43 @@
 		}
 		textarea{
 			min-height: 120px;
+		}
+		.contact-panel{
+			width: 37%;
+			height: auto;
+			border: dashed 2px #c1d3d2;
+			padding: 30px;
+			font-size: 15px;
+			@media all and (max-width: 750px){
+				width: 70%;
+				order: -1;
+				margin-bottom: 50px;
+			}
+			@media all and (max-width: 420px){
+				width: 100%;
+			}
+			.icon{
+				font-size: 18px;
+				color: @primary-color;
+				margin-right: 9px;
+			}
+			>div{
+				display: flex;
+
+			}
+		}
+		.contact-panel-heading{
+			font-weight: 300;
+			font-size: 22px;
+			text-transform: uppercase;
+		}
+		.contact-panel-location{
+			margin-top: 24px;
+			margin-bottom: 24px;
+		}
+		.contact-panel-mail{
+			margin-top: 16px;
+			margin-bottom: 30px;
 		}
 	}
 

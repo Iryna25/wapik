@@ -1377,10 +1377,36 @@ textarea.form-control {
   margin-right: auto;
 }
 .get-in-touch .form-group {
-  max-width: 510px;
+  width: 56%;
+}
+@media all and (max-width: 750px) {
+  .get-in-touch .form-group {
+    width: 100%;
+    text-align: center;
+  }
 }
 .get-in-touch .form-wrapper {
   padding: 65px 65px 21px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+@media all and (max-width: 750px) {
+  .get-in-touch .form-wrapper {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 20px;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 }
 .get-in-touch .form-control {
   margin-bottom: 25px;
@@ -1388,6 +1414,50 @@ textarea.form-control {
 }
 .get-in-touch textarea {
   min-height: 120px;
+}
+.get-in-touch .contact-panel {
+  width: 37%;
+  height: auto;
+  border: dashed 2px #c1d3d2;
+  padding: 30px;
+  font-size: 15px;
+}
+@media all and (max-width: 750px) {
+  .get-in-touch .contact-panel {
+    width: 70%;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+    margin-bottom: 50px;
+  }
+}
+@media all and (max-width: 420px) {
+  .get-in-touch .contact-panel {
+    width: 100%;
+  }
+}
+.get-in-touch .contact-panel .icon {
+  font-size: 18px;
+  color: #6fb048;
+  margin-right: 9px;
+}
+.get-in-touch .contact-panel > div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.get-in-touch .contact-panel-heading {
+  font-weight: 300;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.get-in-touch .contact-panel-location {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.get-in-touch .contact-panel-mail {
+  margin-top: 16px;
+  margin-bottom: 30px;
 }
 .download {
   position: relative;
